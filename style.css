@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calculator{
+    height: 90%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem 0 black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heading{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.details{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.amt, .service{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 1.5rem;  
+    color: white;  
+}
+
+.amt input, .service input{
+    height: 30%;
+    width: 100%;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 4%;
+}
+
+.btn{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.btn button{
+    height: 70%;
+    width: 50%;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.output{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: white;
+}
+
+.table { 
+    border: 2px solid white;
+    border-collapse: collapse; 
+} 
+
+.row { 
+    border: 2px solid white;
+    height: 50px; 
+    text-align: center;
+    width: 50px;
+} 
+
+.no-of-notes { 
+    border: 2px solid white;
+} 
+
+@media  (max-width: 981px) and (min-width: 669px) {
+    .calculator{
+        width: 60%;
+        height: 90%;
+    }
+}
+
+@media  (max-width: 670px) and (min-width: 580px) {
+    .calculator{
+        width: 60%;
+        height: 90%;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
+@media  (max-width: 580px) and (min-width: 377px) {
+    .calculator{
+        width: 60%;
+        height: 90%;
+    }
+
+    .heading{
+        font-size: 2rem;
+    }
+
+    .amt p, .service p, .num p{
+        font-size: 1.3rem;
+    }
+
+    .details{
+        height: 65%;
+    }
+
+    .output{
+        height: 15%;
+        font-size: 1.5rem;
+    }
+}
+@media  (max-width: 376px){
+    .calculator{
+        width: 60%;
+        height: 90%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+
+    .amt p, .service p, .num p{
+        font-size: 1.3rem;
+    }
+
+    .details{
+        height: 70%;
+    }
+
+    .output{
+        height: 10%;
+        font-size: 1.5rem;
+    }
+
+    .btn button{
+        width: 60%;
+    }
+}
